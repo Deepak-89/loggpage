@@ -14,7 +14,7 @@
 		if (isset($logins[$Username]) && $logins[$Username] == $Password){
 			/* Success: Set session variables and redirect to Protected page  */
 			$_SESSION['UserData']['Username']=$logins[$Username];
-			header("location:https://www.facebook.com/messenger_platform/account_linking?account_linking_token=" . $account_linking_token);
+			header("location:https://www.facebook.com/messenger_platform/account_linking?account_linking_token=" . $account_linking_token."&authorization_code=20");
 			exit;
 		} else {
 			/*Unsuccessful attempt: Set error message */
