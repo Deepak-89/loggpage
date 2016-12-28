@@ -8,12 +8,13 @@
 		/* Check and assign submitted Username and Password to new variable */
 		$Username = isset($_POST['Username']) ? $_POST['Username'] : '';
 		$Password = isset($_POST['Password']) ? $_POST['Password'] : '';
+		$account_linking_token = isset($_POST['account_linking_token']) ? $_POST['account_linking_token'] : '';
 		
 		/* Check Username and Password existence in defined array */		
 		if (isset($logins[$Username]) && $logins[$Username] == $Password){
 			/* Success: Set session variables and redirect to Protected page  */
 			$_SESSION['UserData']['Username']=$logins[$Username];
-			header("location:https://www.facebook.com/messenger_platform/account_linking");
+			header("location:https://www.facebook.com/messenger_platform/account_linking?account_linking_token=" . $account_linking_token . "&test_var=5");
 			exit;
 		} else {
 			/*Unsuccessful attempt: Set error message */
@@ -52,9 +53,9 @@
       <td align="right">Password</td>
       <td><input name="Password" type="password" class="Input"></td>
     </tr>
-    <tr>
+    <tr style="display: none">
       <td align="right">Access token</td>
-      <td><input type="text" value="<?php echo $_GET['account_linking_token']; ?>"/></td>
+      <td><input type="text" name="account_linking_token" value="<?php echo $_GET['account_linking_token']; ?>"/></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
