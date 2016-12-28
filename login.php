@@ -53,6 +53,10 @@
       <td><input name="Password" type="password" class="Input"></td>
     </tr>
     <tr>
+      <td align="right">Access token</td>
+      <td><input type="text" value="<?php echo $_GET['account_linking_token']; ?>"/></td>
+    </tr>
+    <tr>
       <td>&nbsp;</td>
       <td><input name="Submit" type="submit" value="Login" class="Button3"></td>
     </tr>
