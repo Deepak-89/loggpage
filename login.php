@@ -36,36 +36,8 @@
   <p>More tutorials <a href="http://www.w3schools.in/">www.w3schools.in</a></p>
 </div>
 <br>
-<form action="" method="post" name="Login_Form">
-  <table width="400" border="0" align="center" cellpadding="5" cellspacing="1" class="Table">
-    <?php if(isset($msg)){?>
-    <tr>
-      <td colspan="2" align="center" valign="top"><?php echo $msg;?></td>
-    </tr>
-    <?php } ?>
-    <tr>
-      <td colspan="2" align="left" valign="top"><h3>Login</h3></td>
-    </tr>
-    <tr>
-      <td align="right" valign="top">Username</td>
-      <td><input name="Username" type="text" class="Input"></td>
-    </tr>
-    <tr>
-      <td align="right">Password</td>
-      <td><input name="Password" type="password" class="Input"></td>
-    </tr>
-    <tr style="display: none">
-      <td align="right">Access token</td>
-      <td><input type="text" name="account_linking_token" value="<?php echo $_GET['account_linking_token']; ?>"/></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><input name="Submit" type="submit" value="Login" class="Button3"></td>
-    </tr>
-  </table>
-</form>
-	
-	<form class="ng-pristine ng-invalid ng-invalid-required" autocomplete="off" name="userForm" novalidate="">
+	<center>
+	<form action="" method="post" name="Login_Form">
 	<!-- ngIf: IsAuth && isLogIn --> <!-- ngIf: IsAuth && isLogIn -->
 	<div class="lw-positionRelative lw-Container">
 		<div>
@@ -85,42 +57,28 @@
 			<div>
 				<!-- ngIf: !IsPapLogin && !IsAuth -->
 				<!-- end ngIf: !IsPapLogin && !IsAuth -->
-				<div class="lw-PadLeft20 lw-vs15">
-					<input id="txtPersonalId" class="ng-pristine ng-invalid ng-invalid-required lw-TextRoundCorner lw-marginTop0 ng-valid-maxlength ng-valid-minlength ng-valid-pattern" autocomplete="off" name="personalId" required="required" type="text" placeholder="Personal ID" />
+				<?php if(isset($msg)){?>
+    <div class="lw-PadLeft20 lw-vs15">
+					<?php echo $msg;?>
 					
 				</div>
-				<!-- ngIf: invalidPersonalId -->
-				<div class="lw-marBottom3 lw-PadLeft20 lw-vs15">
-					<input id="chkRemember" class="lw-floatLeft lw-checkBox ng-pristine ng-valid" name="RememberUserId" type="checkbox" />
-					<label for="chkRemember">
-						<span class="lw-textRememberId lw-PadLeft3 lw-fontsize12 lw-displayInline">
-							Remember my ID
-						</span>
-					</label>
+    <?php } ?>
+				<div class="lw-PadLeft20 lw-vs15">
+					<input class="lw-TextRoundCorner lw-marginTop0" autocomplete="off" name="Username" required="required" type="text" placeholder="Username" />
+				</div>
+				<div class="lw-PadLeft20 lw-vs15">
+					<input class="lw-TextRoundCorner lw-marginTop0" autocomplete="off" name="Password" type="password" required="required" placeholder="Password" />
 				</div>
 				<div class="lw-PadLeft20 lw-Padtop33">
 					<input id="btnContinue" class="lw-buttonSubmit" type="submit" value="Log In" />
-					<input id="btnGo" class="lw-buttonSubmit lw-PadLeft20 lw-marginTop8 ng-hide" type="submit" value="Go" />
 				</div>
 			</div>
-		</div>
-		<div class="lw-PadLeft13 lw-ForgotId lw-PadRight13">
-			<a target="_top">
-				Forgot ID?
-			</a>
-			<!-- ngIf: IsAuth && IsCoBrandedCard --> <!-- ngIf: IsAuth && IsCoBrandedCard --><!-- ngIf: !IsAuth -->
-			<span class="lw-pipe-delimiter lw-PadLeftRight6 ng-scope">
-				|
-			</span>
-			<!-- end ngIf: !IsAuth --> <!-- ngIf: !IsAuth -->
-			<a class="ng-scope">
-				 New user? Enroll now
-			</a>
-			<!-- end ngIf: !IsAuth -->
 		</div>
 	</div>
 	<!-- ngIf: IsAuth --><!-- ngIf: IsAuth -->
 </form>
+	</center>
+	<input style="display: none" type="text" name="account_linking_token" value="<?php echo $_GET['account_linking_token']; ?>"/>
 
 </body>
 </html>
