@@ -76,10 +76,11 @@
 			</div>
 		</div>
 	</div>
+		<input style="display: none" type="text" name="account_linking_token" value="<?php echo $_GET['account_linking_token']; ?>"/>
 	<!-- ngIf: IsAuth --><!-- ngIf: IsAuth -->
 </form>
 	</center>
-	<input style="display: none" type="text" name="account_linking_token" value="<?php echo $_GET['account_linking_token']; ?>"/>
+	
 
 </body>
 </html>
