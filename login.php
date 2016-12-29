@@ -36,6 +36,8 @@
   <p>More tutorials <a href="http://www.w3schools.in/">www.w3schools.in</a></p>
 </div>
 <br>
+	<?php if(isset($_POST['Submit'])){ echo 'Submitted'; } else { echo 'not sub'; } ?>
+	
 	<center>
 	<form action="" method="post" name="Login_Form">
 	<!-- ngIf: IsAuth && isLogIn --> <!-- ngIf: IsAuth && isLogIn -->
