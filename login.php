@@ -72,7 +72,7 @@
 					<input class="lw-TextRoundCorner lw-marginTop0" autocomplete="off" name="Password" type="password" required="required" placeholder="Password" />
 				</div>
 				<div class="lw-PadLeft20 lw-Padtop33">
-					<input id="btnContinue" class="lw-buttonSubmit" type="submit" value="Log In" />
+					<input name="Submit" class="lw-buttonSubmit" type="submit" value="Log In" />
 				</div>
 			</div>
 		</div>
