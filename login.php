@@ -25,16 +25,16 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
+ <meta charset="utf-8">
 <title>PHP Login Script Without Using Database</title>
 <link href="./css/style.css" rel="stylesheet">
 	<link href="./css/log.css" rel="stylesheet">
 </head>
 <body>
-<div id="Frame0">
+<!--<div id="Frame0">
   <h1>PHP Login Script Without Using Database Demo.</h1>
   <p>More tutorials <a href="http://www.w3schools.in/">www.w3schools.in</a></p>
-</div>
+</div>-->
 <br>
 	
 	<center>
