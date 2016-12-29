@@ -28,6 +28,7 @@
 <meta charset="utf-8">
 <title>PHP Login Script Without Using Database</title>
 <link href="./css/style.css" rel="stylesheet">
+	<link href="./css/log.css" rel="stylesheet">
 </head>
 <body>
 <div id="Frame0">
