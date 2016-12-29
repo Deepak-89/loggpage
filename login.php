@@ -14,7 +14,7 @@
 		if (isset($logins[$Username]) && $logins[$Username] == $Password){
 			/* Success: Set session variables and redirect to Protected page  */
 			$_SESSION['UserData']['Username']=$logins[$Username];
-			header("location:https://www.facebook.com/messenger_platform/account_linking?account_linking_token=" . $account_linking_token."&authorization_code=20");
+			header("location:https://www.facebook.com/messenger_platform/account_linking?account_linking_token=" . $account_linking_token . "&authorization_code=20");
 			exit;
 		} else {
 			/*Unsuccessful attempt: Set error message */
@@ -36,7 +36,6 @@
   <p>More tutorials <a href="http://www.w3schools.in/">www.w3schools.in</a></p>
 </div>
 <br>
-	<?php if(isset($_POST['Submit'])){ echo 'Submitted'; } else { echo 'not sub'; } ?>
 	
 	<center>
 	<form action="" method="post" name="Login_Form">
