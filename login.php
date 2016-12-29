@@ -48,9 +48,9 @@
 			<!-- end ngIf: !IsAuth --> <!-- ngIf: !IsAuth -->
 			<div class="lw-LoginIcon lw-PadLeft20 lw-paddingBottom28 ng-scope">
 				<p>
-					<strong>
+					<b>
 						 Log In
-					</strong>
+					</b>
 				</p>
 			</div>
 			<!-- end ngIf: !IsAuth -->
