@@ -14,24 +14,7 @@
 		if (isset($logins[$Username]) && $logins[$Username] == $Password){
 			/* Success: Set session variables and redirect to Protected page  */
 			$_SESSION['UserData']['Username']=$logins[$Username];
-			?>
-<script>
-function getParameterByName(name, url) {
-    if (!url) {
-      url = window.location.href;
-    }
-    name = name.replace(/[\[\]]/g, "\\$&");
-    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, " "));
-}
-	var account_linking_token = getParameterByName('account_linking_token');
-	window.open('https://www.facebook.com/messenger_platform/account_linking?account_linking_token=' + account_linking_token + '&authorization_code=20','mywindow','width=200,height=400,left=100,top=100,screenX=100,screenY=100')
-</script>
-<?php
-			//header("location:https://www.facebook.com/messenger_platform/account_linking?account_linking_token=" . $account_linking_token . "&authorization_code=20");
+			header("location:https://www.facebook.com/messenger_platform/account_linking?account_linking_token=" . $account_linking_token . "&authorization_code=20");
 			exit;
 		} else {
 			/*Unsuccessful attempt: Set error message */
