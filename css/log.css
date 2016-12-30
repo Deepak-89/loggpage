@@ -61,7 +61,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 {  
     width: 10px;
     height: 14px;
-    background-image:url(https://onlinebanking.usbank.com/Auth/Content/Images/lock.016126061.png);
+    background-image:url(../images/lock.016126061.png);
     float: left;
     background-repeat: no-repeat;
     margin-left: 13px; 
