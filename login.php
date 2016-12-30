@@ -54,6 +54,9 @@
 					</b>
 				</p>
 			</div>
+			<div class="lw-LoginIcon lw-PadLeft20 lw-paddingBottom28 ng-scope">
+				<img src="images/usb-logo.png"/>
+			</div>
 			<!-- end ngIf: !IsAuth -->
 			<div>
 				<!-- ngIf: !IsPapLogin && !IsAuth -->
