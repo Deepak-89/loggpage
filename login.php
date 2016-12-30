@@ -43,20 +43,21 @@
 	<div class="lw-positionRelative lw-Container">
 		<div>
 			<!-- ngIf: !IsAuth -->
+			<div>
+				<img src="images/usb-logo.png" class="usb-logo-img"/>
+			</div>
 			<div class="lw-Body_Lock_Icon ng-scope">
 				 
 			</div>
 			<!-- end ngIf: !IsAuth --> <!-- ngIf: !IsAuth -->
-			<div class="lw-LoginIcon lw-PadLeft20 lw-paddingBottom28 ng-scope">
+			<div class="lw-LoginIcon lw-paddingBottom28 ng-scope">
 				<p>
 					<b>
 						 Log In
 					</b>
 				</p>
 			</div>
-			<div class="lw-LoginIcon lw-PadLeft20 lw-paddingBottom28 ng-scope">
-				<img src="images/usb-logo.png"/>
-			</div>
+
 			<!-- end ngIf: !IsAuth -->
 			<div>
 				<!-- ngIf: !IsPapLogin && !IsAuth -->
