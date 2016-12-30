@@ -626,6 +626,7 @@ a.usbDropdown, a.usbDropdown:hover, a.usbDropdown-menuitem, a.usbDropdown-menuit
     font-size: 12px;
     color: #0c2074;
     font-weight:bold;
+	float: left;
     /*line-height: 20px;*/
 }
 .lw-AuthLogin
@@ -1247,5 +1248,8 @@ a.lw-notSupported-loginLink:hover
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+}
+.usb-logo-img {
+	width: 170px;
 }
 /*Ends*/
